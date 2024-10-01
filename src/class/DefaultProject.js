@@ -1,4 +1,4 @@
-import Project from "./Project";
+import Project from './Project';
 
 class DeafaultProject extends Project {
   constructor(name) {
@@ -8,5 +8,5 @@ class DeafaultProject extends Project {
 }
 
 export default (function () {
-  return new DeafaultProject("All Todos");
+  return new DeafaultProject('All Todos');
 })();

@@ -47,6 +47,7 @@ button {
 
 .form {
   padding: 2rem;
+  position: relative;
 }
 .form > * {
   padding: 0.5em 1em;
@@ -55,6 +56,11 @@ button {
 .form textarea {
   resize: none;
   height: 10rem;
+}
+/* ERROR */
+.error-msg {
+  z-index: 999;
+  background-color: rgb(248, 155, 155);
 }
 
 /* TODO */
@@ -65,11 +71,15 @@ button {
 }
 
 .todo {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   background-color: #ccc;
   padding: 1rem;
-
   gap: 2rem;
+}
+
+.todo-info {
+  word-wrap: break-word;
 }
 
 .todo-controls {

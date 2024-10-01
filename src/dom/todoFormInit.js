@@ -1,14 +1,15 @@
-import createTodo from "../func/createTodo";
-import populateTodoList from "./popuplateTodoList";
+import createTodo from '../func/createTodo';
+import populateTodoList from './popuplateTodoList';
+import {
+  titleInput,
+  descInput,
+  dueDateInput,
+  prioritySelect,
+  submitButton,
+} from './querySelectors';
 
 export default function todoFormInit() {
-  const titleInput = document.querySelector(".title-input");
-  const descInput = document.querySelector(".desc-textarea");
-  const dueDateInput = document.querySelector(".time-input");
-  const prioritySelect = document.querySelector(".priority-select");
-  const submitButton = document.querySelector(".submit-button");
-
-  submitButton.addEventListener("click", (e) => {
+  submitButton.addEventListener('click', (e) => {
     e.preventDefault();
 
     createTodo(

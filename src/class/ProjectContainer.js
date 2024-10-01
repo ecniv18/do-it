@@ -1,4 +1,4 @@
-import DefaultProject from "./DefaultProject";
+import DefaultProject from './DefaultProject';
 
 export default class ProjectContainer {
   // already include the default project

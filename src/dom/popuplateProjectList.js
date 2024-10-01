@@ -1,10 +1,10 @@
-import ProjectContainer from "../class/ProjectContainer";
-import projectElement from "./projectElement";
+import ProjectContainer from '../class/ProjectContainer';
+import projectElement from './projectElement';
 
 export default function populateProjectList(
-  container = document.querySelector(".project-list")
+  container = document.querySelector('.project-list')
 ) {
-  container.innerHTML = "";
+  container.innerHTML = '';
   ProjectContainer.list.forEach((project) => {
     container.appendChild(projectElement(project));
   });
