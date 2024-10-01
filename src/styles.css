@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+ul {
+  list-style: none;
+}
+
+button {
+  padding: 0.5em 1em;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-rows: 5rem 1fr;
+  gap: 1rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.wrapper > * {
+  border: 1px solid;
+  padding: 1rem;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+.main > *,
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.form {
+  padding: 2rem;
+}
+.form > * {
+  padding: 0.5em 1em;
+}
+
+.form textarea {
+  resize: none;
+  height: 10rem;
+}
+
+/* TODO */
+.todo-list-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.todo {
+  display: grid;
+  background-color: #ccc;
+  padding: 1rem;
+
+  gap: 2rem;
+}
+
+.todo-controls {
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 2rem;
+}
+
+.todo-controls .todo-date {
+  position: absolute;
+  right: 2rem;
+}
+
+/* PROJECT LIST */
+.project-list-container {
+  padding: 1rem;
+  margin-left: 1rem;
+  border-left: 1px solid #333;
+  position: relative;
+}
+
+.project-form-container {
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+
+.project-form {
+  position: absolute;
+  width: 100%;
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+.project-form input {
+  padding: 0.5em 1em;
+}

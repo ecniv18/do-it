@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <h1 class="logo">Do-It</h1>
+      </header>
+      <main class="main">
+        <div class="form-container">
+          <form class="form">
+            <input type="text" class="title-input" />
+            <textarea class="desc-textarea"></textarea>
+            <input class="time-input" type="date" />
+            <select class="priority-select">
+              <option value="high">High</option>
+              <option value="high">Normal</option>
+              <option value="high">Lowest</option>
+            </select>
+            <button class="submit-button">Submit</button>
+          </form>
+        </div>
+        <section class="main-window">
+          <header class="main-nav">
+            <h2 class="todo-heading">Current Active Project</h2>
+            <nav class="filter">
+              <div class="priority-filter-container">
+                <ul class="priority-filter">
+                  <li><a href="#">High</a></li>
+                  <li><a href="#">Normal</a></li>
+                  <li><a href="#">Low</a></li>
+                </ul>
+              </div>
+            </nav>
+          </header>
+          <ul class="todo-list-container">
+            <!-- todo list -->
+          </ul>
+        </section>
+        <section class="project-list-container">
+          <div class="project-form-container">
+            <!-- Project form -->
+          </div>
+          <button class="project-form-button">Create Project</button>
+          <ul class="project-list">
+            <!-- project list -->
+          </ul>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
