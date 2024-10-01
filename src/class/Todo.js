@@ -3,7 +3,7 @@ export default class Todo {
     const formattedDate = new Date(dueDate);
     this.title = title;
     this.description = description;
-    this.dueDate = `${formattedDate.getMonth} / ${formattedDate.getDay}`;
+    this.dueDate = `${formattedDate.getMonth()} / ${formattedDate.getDay()}`;
     this.priority = priority;
   }
 }
