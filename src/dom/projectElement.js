@@ -11,9 +11,7 @@ export default function projectElement(project) {
   link.addEventListener('click', (e) => {
     e.preventDefault();
     ProjectContainer.setActiveProject(project);
-    ProjectContainer.list.forEach((p) => {
-      console.log(p.name, p.activeStatus);
-    });
+
     populateTodoList();
   });
 

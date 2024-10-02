@@ -8,6 +8,7 @@ export default function todoElement(prop) {
   const todoModifyButton = document.createElement('button');
   const todoTrashButton = document.createElement('button');
   const todoDate = document.createElement('span');
+  const todoPriority = document.createElement('span');
 
   todo.classList.add('todo');
   todoInfoCont.classList.add('todo-info');
@@ -17,11 +18,13 @@ export default function todoElement(prop) {
   todoModifyButton.classList.add('todo-modify-button');
   todoTrashButton.classList.add('todo-trash-button');
   todoDate.classList.add('todo-date');
+  todoPriority.classList.add('todo-priority');
 
   // contents
   todoTitle.innerText = prop.title;
   todoDesc.innerText = prop.description;
   todoDate.innerText = prop.dueDate;
+  todoPriority.innerText = prop.priority;
   todoModifyButton.innerText = 'modify';
   todoTrashButton.innerText = 'trash';
 
@@ -30,6 +33,7 @@ export default function todoElement(prop) {
   todo.appendChild(todoControlsCont);
   todoInfoCont.appendChild(todoTitle);
   todoInfoCont.appendChild(todoDesc);
+  todoInfoCont.append(todoPriority);
   todoControlsCont.appendChild(todoModifyButton);
   todoControlsCont.appendChild(todoTrashButton);
   todoControlsCont.appendChild(todoDate);

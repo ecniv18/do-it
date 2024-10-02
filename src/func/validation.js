@@ -14,7 +14,6 @@ export function validateTodo(todo) {
     errors.push('description length must not be more than 100 characters');
   }
 
-  console.log(errors);
   return errors;
 }
 
@@ -23,6 +22,5 @@ export function validateProject(name) {
   if (name <= 0) {
     errors.push('Project name is required');
   }
-  console.log(errors);
   return errors;
 }

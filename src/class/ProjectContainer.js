@@ -1,3 +1,4 @@
+import clearFilter from '../func/clearFilter';
 import DefaultProject from './DefaultProject';
 
 export default class ProjectContainer {
@@ -23,6 +24,7 @@ export default class ProjectContainer {
 
   static setActiveProject(project) {
     project.setActive();
+    clearFilter();
     this.#list.forEach((proj) => {
       if (proj.id !== project.id) {
         proj.setInactive();

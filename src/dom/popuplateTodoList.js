@@ -2,10 +2,11 @@ import ProjectContainer from '../class/ProjectContainer';
 import todoElement from './todoElement';
 
 export default function populateTodoList(
+  todoList = ProjectContainer.getActiveProject().list,
   container = document.querySelector('.todo-list-container')
 ) {
   container.innerHTML = '';
-  ProjectContainer.getActiveProject().list.forEach((todo) => {
+  todoList.forEach((todo) => {
     container.appendChild(todoElement(todo));
   });
 

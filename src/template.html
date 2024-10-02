@@ -18,9 +18,10 @@
             <input class="time-input" type="date" />
             <select class="priority-select">
               <option value="high">High</option>
-              <option value="high">Normal</option>
-              <option value="high">Lowest</option>
+              <option value="normal">Normal</option>
+              <option value="low">Low</option>
             </select>
+
             <button class="submit-button">Submit</button>
           </form>
         </div>
@@ -28,13 +29,36 @@
           <header class="main-nav">
             <h2 class="todo-heading">Current Active Project</h2>
             <nav class="filter">
-              <div class="priority-filter-container">
-                <ul class="priority-filter">
-                  <li><a href="#">High</a></li>
-                  <li><a href="#">Normal</a></li>
-                  <li><a href="#">Low</a></li>
-                </ul>
-              </div>
+              <ul class="priority-filter">
+                <li>
+                  <a
+                    class="filter-btn"
+                    data-name="high"
+                    data-status="inactive"
+                    href="#"
+                    >High</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="filter-btn"
+                    data-name="normal"
+                    data-status="inactive"
+                    href="#"
+                    >Normal</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="filter-btn"
+                    data-name="low"
+                    data-status="inactive"
+                    href="#"
+                    >Low</a
+                  >
+                </li>
+              </ul>
+              <button class="filter-clear-button">clear</button>
             </nav>
           </header>
           <ul class="todo-list-container">
