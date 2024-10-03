@@ -1,3 +1,5 @@
+import deleteTodo from '../func/deleteTodo';
+
 export default function todoElement(prop) {
   const container = document.createElement('li');
   const todo = document.createElement('article');
@@ -27,6 +29,10 @@ export default function todoElement(prop) {
   todoPriority.innerText = prop.priority;
   todoModifyButton.innerText = 'modify';
   todoTrashButton.innerText = 'trash';
+
+  todoTrashButton.addEventListener('click', () => {
+    deleteTodo(prop.id, prop.projectId);
+  });
 
   container.appendChild(todo);
   todo.appendChild(todoInfoCont);

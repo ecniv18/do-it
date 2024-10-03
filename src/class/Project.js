@@ -19,4 +19,10 @@ export default class Project {
   addTodo(todo) {
     this.list.push(todo);
   }
+
+  deleteTodo(todoId) {
+    this.list = this.list.filter((todo) => {
+      return todo.id !== todoId;
+    });
+  }
 }

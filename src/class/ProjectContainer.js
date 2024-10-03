@@ -13,6 +13,10 @@ export default class ProjectContainer {
     this.#list.push(project);
   }
 
+  static getDefaultProject() {
+    return this.#list[0];
+  }
+
   static getActiveProject() {
     return this.#list.reduce((acc, curr) => {
       if (curr.activeStatus === true) {
