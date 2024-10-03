@@ -1,3 +1,5 @@
+@import './variables.css';
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -11,6 +13,7 @@ html {
 body {
   font-size: 1.6rem;
   color: #333;
+  background-color: var(--clr-light);
 }
 ul {
   list-style: none;
@@ -38,7 +41,6 @@ button {
 }
 
 .wrapper > * {
-  border: 1px solid;
   padding: 1rem;
 }
 
@@ -82,9 +84,10 @@ button {
 .todo {
   display: flex;
   flex-direction: column;
-  background-color: #ccc;
   padding: 1rem;
   gap: 2rem;
+  border-radius: 15px;
+  box-shadow: 1px 1px 5px var(--clr-accent);
 }
 
 .todo-info {
