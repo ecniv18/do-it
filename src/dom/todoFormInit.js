@@ -19,6 +19,10 @@ export default function todoFormInit() {
       prioritySelect.value
     );
 
+    titleInput.value = '';
+    descInput.value = '';
+    dueDateInput.value = '';
+
     populateTodoList();
   });
 }
